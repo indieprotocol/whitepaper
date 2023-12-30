@@ -47,7 +47,7 @@ urlcolor: blue
 
 \vspace{5mm}
 
-{\centering{}Indie is a blockchain protocol that supports community building and content publishing with cryptocurrency rewards. It combines concepts from Steem/Hive social medias with lessons learned from building decentralized applications and their communities. An important key to inspiring participation in any community, currency or free market economy is a fair accounting system that consistently reflects each person's contribution. Indie protocol is the first to attempt to accurately and transparently reward an unbounded number of individuals who publish \textit{content}, without requiring paywalls or advertizing models, and shifting the source of monetization from the audience, and to the business chain that extracts economic value from the content.}
+{\centering{}Indie is a blockchain protocol that supports community building and content publishing with cryptocurrency rewards. It combines concepts from Steem/Hive social medias with lessons learned from building decentralized applications and their communities. An important key to inspiring participation in any community, currency or free market economy is a fair accounting system that consistently reflects each person's contribution. Indie protocol is the first to attempt to accurately and transparently reward an unbounded number of individuals who publish \textit{content}, without requiring paywalls or advertizing models, and shifting the source of monetization from the audience, and to the business chain that extracts economic value from the \textit{content}.}
 
 \end{minipage}
 \vspace{\stretch{3}}
