@@ -70,6 +70,13 @@ Indie Protocol designs permissions around accounts, rather than around cryptogra
 ### Authorities
 Indie Protocol employs a state-of-the-art hierarchical private key system to facilitate regular keys and backup keys. Regular (basic) keys are publishing and performing non-financial operations, financial (active) keys are for performing financial operations, while a separate backup (owner) key can be used to recover access to an account in case of loss of the basic or active keys. Ideally the owner keys are meant to be stored offline, and only used when the account’s keys need to be changed or to recover a lost key. Most software that supports Indie Protocol also encapsulates these key management functions in a way that the user experience is not even aware of the inner complexity involved.
 
+### Working Budget
+The difference between max supply and circulating supply is called the Working Budget and has often in the past been referred to as the reserves.
+
+Indie Protocol has a daily budget to use for development. This budget has a hard-coded upper limit of Total funds in the working budget / 2924 (8 years)
+
+From this daily budget, payments for block production as well as project funding are made. Of course, the IND holders have the choice and need to approve IND tokens leaving the working budget.
+
 ### Fees
 Similar to most other Blockchains, interacting with Indie Protocol comes with a fee for using its features (i.e. operations). Each operation comes with its own fee. Additional to block production and project funding which can drain tokens from the working budget, there are transaction fees paid by users of Indie Protocol that go back into the working budget. 
 
@@ -78,23 +85,17 @@ As a consequence, the total amount of IND in the working budget as well as the t
 While, the IND holders have choices to either increase or decrease the funds used for block production and project funding, the committee has the choice to adapt the transaction fees by means of updating the fee schedule. In contrast to other Blockchains, Indie Protocol comes with fixed fees instead of a fee market. The fee schedule defines which feature of the Blockchain requires which amount of transaction fee for using it.
 
 ### Referral Program
-Indie Protocol has an integrated one-level referral system. Basically, everyone interacting on Indie Protocol needs to deduct a small transaction fee. From that fee (currently) 50% go into the Working Budget (for future funding of development etc.) and the other 40% go into the referral program from where, the registrar (frontend who paid the registration fee and enabled the user registration) as well as the referrer (who invited the user to the register) receive a 25% reward each.
+Indie Protocol has an integrated one-level referral system. Basically, everyone interacting on Indie Protocol needs to deduct a small transaction fee. From that fee (currently) 50% go into the Working Budget (for future funding of development etc.) and the other 50% go into the referral program from where, the registrar (frontend who paid the registration fee and enabled the user registration) as well as the referrer (who invited the user to the register) receive a 25% reward each.
 
 ### Verified Creator Program
 Any user in Indie Protocol is considered a creator, as the protocol doesn't require user registration for the consumers of the content (the consumers will be users in any frontend app, not on the protocol itself as they will not be publishing content). Although, regular users can opt-in to register if they want to publish content.
 
 A creator can request the committee to become a Verified Creator. The requisites for the application are defined specifically for each network, but generically the creator would have to have a minimum amount staked in the protocol and pay the application fee. When an account is upgraded to a so called Verified Creator status, it no longer generates registrar and referrer rewards (although they receive the upgrade fee reward still) and the verified creator starts to receive a 50% refund on all fees.
 
-### Core Token
-The native utility core token of Indie Protocol is IND, it serves as a utility token and is offering governance properties to its holders. Governance describes the progress of governing the Blockchains many variable aspects in a way it it can adapt to future changes more easily.
-
-### Governance
-On Indie Protocol, decisions are made by the holders of IND core native token weighted by the amount of IND owned. In order to improve voting participation and simplify the life of IND holders, voters can either vote directly or delegate voting power to so called proxies. This is similar to a representative democracy, where selected persons decide the course of action. Those leaders have to account for their actions and can be unelected by the core token holders. Unwanted actions includes censoring, favoring, or simply failure to produce blocks in a timely manner. However, the difference to a democracy is that voters in the community have their vote weighted by the amount of IND that they own in their account.
+## Governance
+On Indie Protocol, decisions are made by the holders of IND core native token weighted by the amount of IND staked. In order to improve voting participation and simplify the life of IND holders, voters can either vote directly or delegate voting power to so called proxies. This is similar to a representative democracy, where selected persons decide the course of action. Those leaders have to account for their actions and can be unelected by the core token holders. Unwanted actions includes censoring, favoring, or simply failure to produce blocks in a timely manner. However, the difference to a democracy is that voters in the community have their vote weighted by the amount of IND that they stake in their account.
 
 At any time, voters have to decide on the following aspects of Indie Protocol:
-
-### Members for Block Production
-Block production in Indie Protocol is arranged through DPoS which requires block producers to run for witness and campaign for sufficient votes from IND holders before they can produce blocks on the Blockchain and consequently get rewarded per produced block. Given the governance system and quick re-tallying of votes, a misbehaving block producer can be dismissed within hours. Next to the actual selection of block producers, the voters also have a say over how many block producers should exist.
 
 ### Committee
 The Committee comprises a board that has control over a few Blockchain parameters such as block size, block time, witness reward, and over 30 others. Additionally, the committee can change the fee schedule which defines the minimum fee for each operation offered by the system. Voters can cast a vote for how many members the committee should constitute as well as vote for a particular set of members.
@@ -103,6 +104,12 @@ The Committee comprises a board that has control over a few Blockchain parameter
 Last but not least, the voters have control over who receives funding from the Working Budget of the Blockchain. A worker applies for project funding and needs to campaign for sufficient votes before being rewarded. Similar to block producers and committee members, the rigorous voting system allows almost immediate removal by IND holders and proxies.
 
 A certain amount of the daily available tokens can be allocated to make development possible by means of workers for projects funding. Anyone can set up a worker on Indie Protocol and ask for a daily allowance in IND. If the IND holders approve a particular worker, the IND are transferred from the daily budget. A Soft-limit defines the maximum amount of the daily budget that is given to all approved workers. Consequently, those workers that have received more votes from IND holders will receive their funds first. This means that workers, even if approved, may not be funded if the aforementioned threshold is hit. Furthermore, workers constantly stand under the scrutiny of the IND holders who can disapprove (e.g. fire) workers that do not deliver.
+
+### Block Production
+Block production in Indie Protocol is arranged through DPoS which requires block producers to run for witness and campaign for sufficient votes from IND holders before they can produce blocks on the Blockchain and consequently get rewarded per produced block. Given the governance system and quick re-tallying of votes, a misbehaving block producer can be dismissed within hours. Next to the actual selection of block producers, the voters also have a say over how many block producers should exist.
+
+## Core Tokens
+The native utility core token of Indie Protocol is IND, it serves as a utility token and is offering governance properties to its holders. Governance describes the progress of governing the Blockchains many variable aspects in a way it it can adapt to future changes more easily.
 
 ## Supply
 In this section, we would like to discuss the actual supply of the core IND token in more detail. Firstly, we define the max supply as that supply that can at most be in circulation, similar to how there will only ever be up to 21 million BTC on Bitcoin Blockchain. Furthermore, the circulating supply represents that amount that currently is in circulation and
@@ -115,13 +122,6 @@ Indie Protocol will be launched without any ICO, token sale or any pre-mint. Ind
 In the genesis block of Indie Protocol a total of XXX,000,000,000.00000 IND will be allocated to the blockchain reserves (treasury). These IND can still be claimed by proving ownership of the corresponding private key. The IND token comes with a limited supply that is different from circulating (liquid) supply.
 
 A max supply of XXX,000,000,000.00000 IND has been put in place on the Blockchain. This can never change. The supply is set aside for future project funding and rewarding block producers, and is only accessible with approval by the IND holders through the worker system. This so called working budget is also often referred to as reserves. It is worth noting that revenues made from transactions fees are not shared with holders of IND but instead go back into the working budget to further allow future development. There is no reward for holding the core IND token in any way.
-
-## Working Budget
-The difference between max supply and circulating supply is called the Working Budget and has often in the past been referred to as the reserves.
-
-Indie Protocol has a daily budget to use for development. This budget has a hard-coded upper limit of Total funds in the working budget / 2924
-
-From this daily budget, block production as well as for project funding are made. Of course, the IND holders have the choice and need to approve IND tokens leaving the working budget.
 
 ## Block Producers
 Block production comes at a cost for running and maintaining equipment. Indie Protocol acknowledges this fact by rewarding block producers in core IND tokens per produced block. Depending on the valuation of IND, the committee can modify the amount of IND rewarded per block. As of Q1/2018, each block is rewarded with 1 IND. Those IND are taken from the working budget.
