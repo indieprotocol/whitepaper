@@ -25,6 +25,10 @@ But, almost 6 centuries later, wanting to enforce those laws to digital copies, 
 [1]: https://en.wikipedia.org/wiki/Intellectual_property "Intellectual Property wikipedia page"
 [2]: https://en.wikipedia.org/wiki/Copyright "Copyright wikipedia page"
 
+#### Digital Media Content
+It's almost impossible to succeed in imposing access restrictions to digital media content. So many attempts were made already, like with the Digital Rights Management (DRM) platforms, all of them were unsuccessful. And the aim of the copyright laws was never to restrict the exposure of the works, but exactly the opposite! Due to the required work needed to expose the creative works, publishers and distributors wanted to have their rights assured, but that work became obsolete, so them, in a last resort attempt to continue in business, invert the reasoning behind the copyright laws, which were always to protect the creators and allow for greater dissemination of the works, and start imposing restrictions of access where there were none.
+
+With digital media content it makes no economic sense to monetize the copies, as there is no economic value in something that we can make as many as we can, and effortlessly. And the creators work every day to produce their creative works, in order for them to be seen, listened, read, or felt by their audience, that's the whole point of the creation, right? This means that any blockers that we impose to the natural dissemination of the creative works, in the digital age, will serve no good for the creator, as they prevent or reduce the most important goal of being a creator in the first place.
 
 ### Indie Solution
 Bitcoin was the first fully autonomous system to utilize distributed consensus technology to create a more efficient and reliable global payment network. The core innovation of Bitcoin is the Blockchain, a cryptographically secured public ledger of all accounts on the Bitcoin network that facilitates the transfer of value from one individual directly to another. For the first time in history, financial transactions over the internet no longer require a middle man to act as a trustworthy, confidential fiduciary.
