@@ -42,6 +42,35 @@ Indie Protocol enables the creation of Decentralized “Blockchain as Organizati
 
 Indie Protocol looks to extend the innovation of the Blockchain to all digital content creators, that rely upon the internet to publish, distribute and license their works. Whether its music, books, photographs, video or audio podcasts, movies, or many other types of content, a digital public ledger allows for the creation and distribution of incentives to empower the creator economy in ways never before possible. The advent of BaO's ushers in a new paradigm in organizational structure in which Blockchains can run without any human management and under the control of an incorruptible set of business rules. These rules are encoded in publicly auditable open source software distributed across the computers of the community participants, who effortlessly secure the organization from arbitrary control. Indie Protocol does for content what bitcoin did for money by utilizing distributed consensus technology to enable creators BaO's that are inherently global, transparent, trustworthy, efficient and, most importantly redistribute the generated cashflow fairly among all the creators, not just a few.
 
+## Digital Media Content
+Indie Protocol is designed from the ground up to address the major barriers to adoption and monetization of a digital media content economy. Our thesis is to substitute the autocratic nature of the current digital media content distribution platforms by a free market that will define the price for the scarce media throughput of a decentralized media content network, and also enabling a pear to pear licensing mechanism with NFT proofs. Economic incentives enabled by cryptocurrency can dramatically facilitate the growth of a new digital media content platform, as seen previously in projects like [DTube](https://d.tube) or [DSound](https://dsound.github.io/dsound).
+
+The challenge faced by Indie Protocol is to derive an algorithm for scoring individual contributions that most community members consider to be a fair assessment of the subjective value of each contribution. In a perfect world, community members would cooperate to rate each other's contribution and derive a fair compensation. In the real world, algorithms must be designed to be resistant to intentional manipulation for profit, as seem with vote buying in Steem/Hive social medias. Any widespread abuse of the scoring system could cause community members to lose faith in the perceived fairness of the economic system.
+
+Existing platforms operate on a one-user, one-vote principle. This creates an environment where rankings can be manipulated by Sybil attacks and the service providers must proactively identify and block abusers. People already attempt to manipulate the Reddit, Facebook, and Twitter scoring algorithms when the only reward is web traffic or censorship.
+
+Indie Protocol is designed around a relatively simple concept: everyone’s meaningful contribution to the community should be recognized for the value it adds. When people are recognized for their meaningful contributions, they continue contributing and the community grows. Any imbalance in the give and take within a community is unsustainable. Eventually the givers grow tired of supporting the takers and disengage from the community.
+
+The challenge is to create a system capable of identifying the contributions that are needed and their relative worth, using a methodology that can scale to an unbounded number of people.
+
+### Valuable Contributions
+In Indie Protocol there are several ways to contribute to the network and get rewards for doing so:
+
+#### Publish Content
+A content creator can publish digital media content to the platform. Publishing a content requires paying a small fee in the core utility token (IND). The content is registered in the Indie Blockchain, the media itself is stored on the private IPFS network, and the content NFT serves as content registry proof. Content NFTs are bound to the creator account and are non-transferrable. For the content registration, the network will probably have to package the media in many formats, and some metadata needs to be stored onchain, like content title, category, etc (network specific). With the content publishing, the creator has the option to create as many licensing options as the network supports, like print license for a book or synchronization license for music, and establish your pricing for those or let the platform handle the pricing for you based on demand. Each of the licensing options will allow users to buy and receive the respective licensing NFT. There are options for single-use, time bound or perpetual licenses. The content weight will be evaluated every reward period and will receive the rewards depending on the weight it collected. The weight is calculated by an algorithm that takes into account several factors, like creator stake, content presence in tops of category, and content presence in users collections for the category. Presence in collections that actually got to the tops of distribution platforms and were updated this cycle will weight more.
+
+#### Publish Collections
+#### Curate Content
+
+### Other Contributions not Rewarded
+The end users of the digital media content will not necessarily have an account at the Indie Protocol network for the specific content they are using, so interactions and likes are completely distribution platform dependent.
+
+### Contributions by Distribution Platforms
+
+#### Statistics
+#### Publish Collections
+
+
 ## Blockchain Architecture
 
 Indie Protocol is a Blockchain Platform built as [open source code](https://github.com/indieprotocol/indie-core), based on the Industrial-grade [Graphene blockchain core](https://github.com/cryptonomex/graphene), that powered leading networks like [BitShares](https://bitshares.github.io/), [Steemit](https://github.com/steemit) or [EOS.io](https://github.com/eosio).
@@ -144,7 +173,7 @@ Being an active member of the committee comes at a cost for executing all admini
 ### Block Production
 Block production in Indie Protocol is arranged through DPoS, which requires block producers to register themselves and campaign for sufficient votes from IND holders, before they can start producing blocks on the Blockchain, and consequently get rewarded per produced block. Given the governance system and quick re-tallying of votes, a misbehaving block producer can be dismissed within hours. Next to the actual selection of block producers, the voters also have a say over how many block producers should exist.
 
-Block production comes at a cost for running and maintaining equipment. Indie Protocol acknowledges this fact by rewarding block producers in core IND tokens per produced block. Depending on the valuation of IND, the committee can modify the amount of IND rewarded per block. As a start, each block is rewarded with 10 IND. Those IND are taken from the working budget.
+Block production comes at a cost for running and maintaining equipment. Indie Protocol acknowledges this fact by rewarding block producers in core IND tokens per produced block. Depending on the valuation of IND, the committee can modify the amount of IND rewarded per block. As a start, each block is rewarded with 1 IND. Those IND are taken from the working budget.
 
 ### Workers
 Last but not least, the voters have control over who receives funding from the Working Budget of the Blockchain. A worker applies for project funding and needs to campaign for sufficient votes before being rewarded. Similar to block producers and committee members, the rigorous voting system allows almost immediate removal by IND holders and proxies.
