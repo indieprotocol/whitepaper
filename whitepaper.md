@@ -11,10 +11,20 @@ In the digital content age, the content became portable and easily produced, pac
 
 #### Intellectual Property Battles
 *The modern concept of intellectual property was developed in England in the 17th and 18th centuries.* ([1])
-And these battles are not new:
+But there are references to intellectual property systems that go as far back as the 15th century. And these battles are not new:
 *"Literary property" was the term predominantly used in the British legal debates of the 1760s and 1770s over the extent to which authors and publishers of works also had rights deriving from the common law of property.* ([1])
 
+> **Disambiguation**
+> The term Intellectual Property, as defined by World Intellectual Property Organization (WIPO), refers to the creations of the mind, such as inventions, literary and artistic works, designs, symbols, names and images used in commerce. Copyright on the other hand, means the exclusive and assignable legal right, given to the creator for a fixed number of years, to print, publish, perform, film, or record literary, artistic or musical material. Copyright is just a type of intellectual property, and that's exactly the one that we want to address.
+
+The Copyright laws came about in the 15th and 16th centuries, right after the invention of the printing press. ([2])
+Well, in the middle ages there was not much cultural dissemination. Mostly the audiences for creators of that time were the higher status persons, and to reach them the creative works needed to be translated, printed and shipped all over the planet, in order to meet a significant number of people. This had to be done by the publishing corporations, and they had to secure their rights to use and reproduce the intellectual property of the creator, and that would generate income for them as well - it was a win-win at that time.
+
+But, almost 6 centuries later, wanting to enforce those laws to digital copies, that can be made in milliseconds in a computer that everyone caries in their pocket makes no sense, right?
+
 [1]: https://en.wikipedia.org/wiki/Intellectual_property "Intellectual Property wikipedia page"
+[2]: https://en.wikipedia.org/wiki/Copyright "Copyright wikipedia page"
+
 
 ### Indie Solution
 Bitcoin was the first fully autonomous system to utilize distributed consensus technology to create a more efficient and reliable global payment network. The core innovation of Bitcoin is the Blockchain, a cryptographically secured public ledger of all accounts on the Bitcoin network that facilitates the transfer of value from one individual directly to another. For the first time in history, financial transactions over the internet no longer require a middle man to act as a trustworthy, confidential fiduciary.
