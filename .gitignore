@@ -78,3 +78,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Generated files
+refs.md
