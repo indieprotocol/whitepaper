@@ -76,6 +76,7 @@ Becoming a committee member requires a minimum stake and some popularity in the 
 
 #### Staking
 Although the user stake doesn't generate any yield, by having a stake the creator becomes more influential in the platform. Also, the creators published content will become more valuable with more stake, thus helping it reach new highs in the network ranking and achieve higher rewards.
+When unstaking, there will be a cool down period of 4 weeks, during which the stake will not be taken into account for the protocol. After that period, the liquid core utility token IND will appear in the users balance automatically.
 
 #### Other Contributions not Rewarded
 The end users of the digital media content will not necessarily have an account at the Indie Protocol network, so interactions and likes on the frontends are completely content distributor dependent. They will submit those statistics back to Indie Protocol in an asynchronous manner, just for display and sorting purposes, but they won't have any weight in the rewards.
@@ -132,12 +133,11 @@ In the genesis block of Indie Protocol the max supply, subtracted by the circula
 It is worth noting that revenues made from transactions fees are not shared with holders nor stakers of IND, but instead go back into the working budget, to pay for recurring network costs, reward the creators, and to allow future development. There is no reward for holding the core IND token in any way.
 
 ## Blockchain Architecture
+This is the start of the technical part of the paper, so for non-technical reader you are probably done this far. But you're much welcome to continue reading, of course...
+
 Indie Protocol is a Blockchain Platform built as [open source code](https://github.com/indieprotocol/indie-core), based on the Industrial-grade [Graphene blockchain core](https://github.com/cryptonomex/graphene), that powered leading networks like [BitShares](https://bitshares.github.io/), [Steemit](https://github.com/steemit) or [EOS.io](https://github.com/eosio).
 
-Indie Protocol high-level architecture includes the following components, which are described individually:
-
-### Transactions
-When users want to interact with Indie Protocol, they construct so called transactions and transmit them to the network. These represent messages that contain instructions about what operation(s) a user wants to use. A common operation is the simple transfer operation that comes with transfer-specific instructions that provides the necessary information for this action, such as the sender, receiver, the amount to transfer as well as an optional encrypted memo. To allow multiple operations to take place subsequently, multiple operations can be bundled into a single transaction. To identify against the system, transactions are cryptographically signed by the users. These signatures authenticate a user and provide authorization for the operations in the transaction.
+Indie Protocol high-level architecture includes the following components, which are described individually.
 
 ### Blockchain
 Indie Protocol serves as a journal (e.g. a ledger) of user-signed instructions that become a binding agreement as soon as they are included into a block. After inclusion into a block, the agreements are stored indefinitely by means of a hash-linked-list (the Blockchain). From this ordered sequence of transactions, a current state (think: account balances) can be determined by processing all transactions consecutively starting at the very first block. As we will see later, the software will ensure that instructions that are stored in the Blockchain have been successfully authenticated and validated. For validating and processing of operations, a common set of rules define the consequences of particular actions, which are part of the of the Blockchain protocol.
@@ -190,6 +190,14 @@ Indie Protocol designs permissions around accounts, rather than around cryptogra
 ### Authorities
 Indie Protocol employs a state-of-the-art hierarchical private key system to facilitate regular keys and backup keys. Regular (basic) keys are publishing and performing non-financial operations, financial (active) keys are for performing financial operations, while a separate backup (owner) key can be used to recover access to an account in case of loss of the basic or active keys. Ideally the owner keys are meant to be stored offline, and only used when the account’s keys need to be changed or to recover a lost key. Most software that supports Indie Protocol also encapsulates these key management functions in a way that the user experience is not even aware of the inner complexity involved.
 
+### Transactions
+When users want to interact with Indie Protocol, they construct so called transaction and transmit them to the network. These represent messages that contain instructions about what operation(s) a user wants to use. A common operation is the simple transfer operation that comes with transfer-specific instructions that provides the necessary information for this action, such as the sender, receiver, the amount to transfer as well as an optional memo. To allow multiple operations to take place subsequently, multiple operations can be bundled into a single transaction. To identify against the system, transactions are cryptographically signed by the users. These signatures authenticate a user and provide authorization for the operations in the transaction.
+
+### Proposed Transactions
+Additionally, Indie Protocol allows users to propose a transaction which requires approval of multiple accounts in order to execute. These transactions are only partially valid and do not execute until they are completely valid. The user proposes a transaction, then signatory accounts add or remove their approvals from this operation. When a sufficient number of approvals have been granted, the operations in the proposal are used to create a virtual transaction which is subsequently evaluated. Even if the transaction fails, the proposal will be kept until the expiration time, at which point, if sufficient approval is granted, the transaction will be evaluated a final time. This allows transactions which will not execute successfully until a given time to still be executed through the proposal mechanism. The first time the proposed transaction succeeds, the proposal will be regarded as resolved, and all future updates will be invalid.
+
+The common use-case would be similar to so called multi-signature transactions which must be signed by two parties. Classical crypto currencies had the issue that such proposed transaction had to be communicated on separated channels until all required signatures have been collected. With Indie Protocol is possible to propose a transaction on the blockchain and have the required signatures be added by the respective parties.
+
 ### Working Budget
 The difference between max supply and circulating supply is called the Working Budget and has often in the past been referred to as the reserves.
 
@@ -218,6 +226,7 @@ There is a special kind of account in the protocol, which is the distributor acc
 A distributors market determines the ones that are active at each point in time. Each distributor is evaluated for each content category that they are submitting feeds for, and with these transactions they can send any amount of fees - imagine this like a paid subscription for the content they are using from the protocol. Their position in the rank is calculated by their stake and by the fees they have sent to the working budget with these weights: 25% stake median of current period, 25% total fees paid, 50% fees paid the current period.
 
 The committee determines the number of active distributors at any point in time, so that a competition is created to be at the highest ranks. The distributor ranking is always public and serves as a public display of the distributors contributions to the creators in the protocol. The distributors that become inactive by falling out of the top tier will not be able to access content from the protocol, and their status can be revoked if the committee verifies that they are subverting the protocol rules of content access.
+
 ## Legal Disclaimer
 Indie Protocol is the code-base for many Blockchain Networks to be launched and ran by a network of voted block producer nodes (Blockchain nodes) around the world, similar to other DPoS blockchains as an infrastructure. Indie Protocol is not a company, a trademark nor a brand, Indie Protocol doesn't have any legal responsibilities as a platform nor as code; users of Indie Protocol might have responsibilities or legal obligations for using it toward their legal jurisdiction depending on their usage and the means behind it.
 
